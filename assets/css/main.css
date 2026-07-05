@@ -128,6 +128,29 @@ header,
   color: #ff3726 !important;
 }
 
+/* Additional header background overrides */
+body > header {
+  background-color: #000 !important;
+}
+
+nav#mobile-menu {
+  background-color: #000 !important;
+}
+
+div.header-left,
+div.header-right {
+  background-color: #000 !important;
+}
+
+.container-fluid {
+  background-color: transparent !important;
+}
+
+/* Make sure no white/light backgrounds leak through */
+.header-1 * {
+  background-image: none !important;
+}
+
 :root {
   --body: #fff;
   --black: #000;
@@ -3470,10 +3493,10 @@ span {
   background-color: #000000 !important;
 }
 .sticky.header-1 .header-main .main-menu ul li a {
-  color: #ffffff;
+  color: #ff3726 !important;
 }
 .sticky.header-1 .header-main .main-menu ul li a:hover {
-  color: var(--theme) !important;
+  color: #ffff00 !important;
 }
 .sticky.header-1 .header-main .header-right .search-icon {
   color: #ffffff;
@@ -3523,7 +3546,7 @@ span {
 }
 
 .offcanvas__info {
-  background: var(--bg) none repeat scroll 0 0;
+  background: #000 !important;
   border-left: 2px solid var(--theme2);
   position: fixed;
   right: 0;
@@ -3569,7 +3592,7 @@ span {
   padding: 30px 30px;
 }
 .offcanvas__wrapper .offcanvas__content .text {
-  color: var(--text);
+  color: #ffffff !important;
 }
 .offcanvas__wrapper .offcanvas__content .offcanvas__close {
   width: 45px;
@@ -3588,6 +3611,11 @@ span {
 .offcanvas__wrapper .offcanvas__content .offcanvas__contact {
   margin-top: 20px;
 }
+
+.offcanvas__wrapper .offcanvas__content .offcanvas__contact h4 {
+  color: #ffffff !important;
+}
+
 .offcanvas__wrapper .offcanvas__content .offcanvas__contact ul {
   margin-top: 20px;
 }
