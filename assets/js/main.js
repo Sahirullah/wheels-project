@@ -1,10 +1,10 @@
 /*-----------------------------------------------------------------
 
-Template Name: Remons - Booking Rental HTML Template<
+Template Name: Click4Wheels - Booking Rental HTML Template<
 Author: Pixydrops
 Author URI: https://themeforest.net/user/pixydrops/portfolio
 Version: 1.0.0
-Description: Remons - Booking Rental HTML Template<
+Description: Click4Wheels - Booking Rental HTML Template<
 
 -------------------------------------------------------------------
 Js TABLE OF CONTENTS
