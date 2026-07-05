@@ -141,42 +141,13 @@ header,
 /* WhatsApp Button Styling */
 .whatsapp-btn {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 9999;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.3s ease-in-out;
-}
-
-.whatsapp-btn:hover {
-  transform: scale(1.1);
-}
-
-.whatsapp-icon {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  display: block;
-  object-fit: cover;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  transition: all 0.3s ease-in-out;
-}
-
-.whatsapp-btn:hover .whatsapp-icon {
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
-}
-
-/* WhatsApp Button Styling */
-.whatsapp-btn {
-  position: fixed;
   bottom: 30px;
   right: 30px;
   z-index: 999;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: left;
+  justify-content: left;
+  margin-bottom: 70px;
   text-decoration: none;
   transition: all 0.3s ease;
 }
