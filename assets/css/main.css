@@ -49,6 +49,85 @@ body {
   background-color: #000 !important;
 }
 
+.pickup-loaction-area {
+  background-color: #000 !important;
+}
+
+.pickup-loaction-area::before,
+.pickup-loaction-area::after {
+  background-color: #000 !important;
+}
+
+.brand-wrapper {
+  background-color: #000 !important;
+}
+
+.search-booking-section {
+  background-color: #000 !important;
+}
+
+html {
+  background-color: #000 !important;
+}
+
+header {
+  background-color: #000 !important;
+}
+
+header,
+.header-1,
+.header-top-section,
+.mean__menu-wrapper {
+  background-color: #000 !important;
+}
+
+/* Force black menu background */
+.header-1 {
+  background-color: #000 !important;
+  background-image: none !important;
+}
+
+.header-top-section {
+  background-color: #000 !important;
+  background-image: none !important;
+}
+
+.main-menu {
+  background-color: #000 !important;
+}
+
+.header-main {
+  background-color: #000 !important;
+}
+
+/* Menu links must be orange/red for visibility */
+.header-1 .header-main .main-menu ul li a {
+  color: #ff3726 !important;
+  background-color: transparent;
+}
+
+.header-1 .header-main .main-menu ul li a:hover {
+  color: #ffff00 !important;
+}
+
+/* Logo size reduction */
+.header-1 .header-main .header-left .logo img {
+  max-width: 80px !important;
+  height: auto !important;
+}
+
+/* Mobile/Offcanvas menu link colors */
+.mobile-menu a,
+.offcanvas__info a,
+.fix a {
+  color: #ff3726 !important;
+}
+
+.mobile-menu ul li a,
+.offcanvas__content ul li a {
+  color: #ff3726 !important;
+}
+
 :root {
   --body: #fff;
   --black: #000;
@@ -165,7 +244,7 @@ body {
   font-weight: normal;
   line-height: 28px;
   color: var(--text);
-  background-color: var(--white);
+  background-color: #000 !important;
   padding: 0;
   margin: 0;
   overflow-x: hidden;
@@ -2763,11 +2842,11 @@ span {
 }
 
 .header-top-section {
-  background-color: var(--theme2);
+  background-color: #000 !important;
   padding: 10px 60px;
   position: relative;
   z-index: 9;
-  border-top: 3px solid var(--theme2);
+  border-top: 3px solid #000 !important;
 }
 @media (max-width: 1199px) {
   .header-top-section {
@@ -2787,7 +2866,7 @@ span {
   height: 100%;
   width: 285px;
   content: "";
-  background-color: var(--white);
+  background-color: #000 !important;
   z-index: -1;
   clip-path: polygon(0 0, 90% 0%, 100% 100%, 0% 100%);
 }
@@ -2798,10 +2877,10 @@ span {
 }
 .header-top-section.style-two {
   border: none;
-  background-color: transparent;
+  background-color: #000 !important;
 }
 .header-top-section.style-two::before {
-  background-color: #0c142e;
+  background-color: #000 !important;
   clip-path: none;
   width: 100%;
   left: 260px;
@@ -2831,7 +2910,7 @@ span {
   }
 }
 .header-top-wrapper .contact-list li {
-  color: #d4eaff;
+  color: #ffffff !important;
   font-size: 14px;
 }
 .header-top-wrapper .contact-list li i {
@@ -2839,7 +2918,7 @@ span {
   margin-right: 10px;
 }
 .header-top-wrapper .contact-list li a {
-  color: #d4eaff;
+  color: #ffffff !important;
 }
 .header-top-wrapper .header-top-right {
   display: flex;
@@ -2865,7 +2944,7 @@ span {
   color: var(--white);
 }
 .header-top-wrapper .header-top-right .top-list li a {
-  color: #d4eaff;
+  color: #ffffff !important;
 }
 .header-top-wrapper .header-top-right .social-icon {
   gap: 25px;
@@ -3046,16 +3125,16 @@ span {
   display: inline-block;
 }
 .header-1 .header-main .header-left .logo img {
-  max-width: 120px;
+  max-width: 80px;
   height: auto;
   display: block;
 }
 .header-1 .header-main .main-menu ul li a {
   font-weight: 500;
-  color: #ffffff;
+  color: #ff3726 !important;
 }
 .header-1 .header-main .main-menu ul li a:hover {
-  color: var(--theme) !important;
+  color: #ffff00 !important;
 }
 .header-1 .header-main .main-menu ul li .submenu li a {
   font-weight: 500;
@@ -3366,6 +3445,13 @@ span {
 
 .sidebar__toggle {
   cursor: pointer;
+  display: block;
+  background: none;
+  border: none;
+  padding: 10px;
+  z-index: 10000;
+  font-size: 24px;
+  color: #ffffff;
 }
 
 .sticky {
@@ -3449,13 +3535,15 @@ span {
   -ms-transform: translateX(calc(100% + 80px));
   -o-transform: translateX(calc(100% + 80px));
   transform: translateX(calc(100% + 80px));
-  -webkit-transition: transform 0.45s ease-in-out, opacity 0.45s ease-in-out;
-  -moz-transition: transform 0.45s ease-in-out, opacity 0.45s ease-in-out;
-  transition: transform 0.45s ease-in-out, opacity 0.45s ease-in-out;
+  -webkit-transition: transform 0.45s ease-in-out, opacity 0.45s ease-in-out, visibility 0.45s ease-in-out;
+  -moz-transition: transform 0.45s ease-in-out, opacity 0.45s ease-in-out, visibility 0.45s ease-in-out;
+  transition: transform 0.45s ease-in-out, opacity 0.45s ease-in-out, visibility 0.45s ease-in-out;
   z-index: 99999;
   overflow-y: scroll;
   overscroll-behavior-y: contain;
   scrollbar-width: none;
+  opacity: 0;
+  visibility: hidden;
 }
 .offcanvas__info::-webkit-scrollbar {
   display: none;
@@ -3463,6 +3551,7 @@ span {
 
 .offcanvas__info.info-open {
   opacity: 1;
+  visibility: visible;
   -webkit-transform: translateX(0);
   -moz-transform: translateX(0);
   -ms-transform: translateX(0);
@@ -3508,7 +3597,7 @@ span {
   text-transform: capitalize;
 }
 .offcanvas__wrapper .offcanvas__content .offcanvas__contact ul li a {
-  color: var(--text);
+  color: #ff3726 !important;
 }
 .offcanvas__wrapper .offcanvas__content .offcanvas__contact ul li:not(:last-child) {
   margin-bottom: 15px;

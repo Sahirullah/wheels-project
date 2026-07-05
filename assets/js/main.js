@@ -36,13 +36,47 @@ Js TABLE OF CONTENTS
         });
 
         //>> Sidebar Toggle Js Start <<//
-        $(".offcanvas__close,.offcanvas__overlay").on("click", function() {
-            $(".offcanvas__info").removeClass("info-open");
-            $(".offcanvas__overlay").removeClass("overlay-open");
-        });
-        $(".sidebar__toggle").on("click", function() {
+        // Open menu on hamburger click
+        $(".sidebar__toggle").on("click", function(e) {
+            e.preventDefault();
+            e.stopPropagation();
             $(".offcanvas__info").addClass("info-open");
             $(".offcanvas__overlay").addClass("overlay-open");
+            console.log("Menu opened");
+        });
+        
+        // Close menu on overlay click
+        $(".offcanvas__overlay").on("click", function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            $(".offcanvas__info").removeClass("info-open");
+            $(".offcanvas__overlay").removeClass("overlay-open");
+            console.log("Menu closed via overlay");
+        });
+        
+        // Close menu on close button click
+        $(".offcanvas__close").on("click", function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            $(".offcanvas__info").removeClass("info-open");
+            $(".offcanvas__overlay").removeClass("overlay-open");
+            console.log("Menu closed via close button");
+        });
+
+        // Close menu when clicking links
+        $(".offcanvas__info a").not(".offcanvas__close").on("click", function() {
+            $(".offcanvas__info").removeClass("info-open");
+            $(".offcanvas__overlay").removeClass("overlay-open");
+            console.log("Menu closed via link click");
+        });
+
+        // Close menu on ESC key
+        $(document).on("keydown", function(e) {
+            if(e.keyCode === 27) {
+                $(".offcanvas__info").removeClass("info-open");
+                $(".offcanvas__overlay").removeClass("overlay-open");
+                console.log("Menu closed via ESC key");
+            }
         });
 
         //>> Body Overlay Js Start <<//

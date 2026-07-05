@@ -1,0 +1,590 @@
+/* ===================================
+   RESPONSIVE MOBILE & TABLET STYLES
+   =================================== */
+
+@import "mixins";
+@import "variables";
+
+/* =====================
+   MOBILE FIRST APPROACH
+   Extra Small Devices (320px - 480px)
+   ===================== */
+@include breakpoint(max-xxsmall) {
+  .container-fluid,
+  .container {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+
+  h1 {
+    font-size: 24px;
+    line-height: 1.2;
+  }
+
+  h2 {
+    font-size: 20px;
+    line-height: 1.3;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  h4 {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+  /* Hero Section Mobile */
+  .hero-content {
+    h1 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    h4 {
+      font-size: 12px;
+    }
+  }
+
+  .array-button {
+    display: none;
+  }
+
+  /* Pickup Form Mobile */
+  .pickup-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .pickup-items {
+    width: 100%;
+    flex: 0 0 100%;
+  }
+
+  .pickup-btn {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 13px;
+  }
+
+  /* Feature Cards Mobile */
+  .feature-benefit-items {
+    margin-bottom: 20px;
+    padding: 15px;
+
+    .feature-content {
+      h4 {
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 12px;
+      }
+    }
+  }
+
+  /* Buttons Mobile */
+  .theme-btn,
+  .btn {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 13px;
+    display: block;
+    text-align: center;
+  }
+
+  .link-btn {
+    width: auto;
+  }
+
+  /* Gallery Mobile */
+  .col-lg-3,
+  .col-md-4,
+  .col-md-6 {
+    width: 100% !important;
+    margin-bottom: 15px;
+  }
+
+  /* Card Items Mobile */
+  .car-rental-items,
+  .testimonial-card-items,
+  .news-post-items {
+    margin-bottom: 20px;
+    padding: 15px;
+  }
+
+  /* Testimonials Mobile */
+  .client-info-items {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .client-img {
+    width: 40px;
+    height: 40px;
+  }
+
+  /* Footer Mobile */
+  .footer-widget {
+    margin-bottom: 25px;
+
+    h5 {
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+
+    ul li {
+      font-size: 12px;
+      margin-bottom: 8px;
+    }
+
+    p {
+      font-size: 12px;
+    }
+  }
+
+  /* Navbar Mobile */
+  .header-button {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .icon-items {
+    display: none;
+  }
+
+  /* Images Mobile */
+  .mobile-click4wheels-image {
+    margin-bottom: -60px;
+    max-width: 100%;
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  /* Offcanvas Menu Mobile */
+  .offcanvas__info {
+    width: 100%;
+  }
+
+  /* Form Elements Mobile */
+  input,
+  textarea,
+  select {
+    font-size: 16px;
+    width: 100%;
+    padding: 12px;
+  }
+
+  label {
+    font-size: 13px;
+    margin-bottom: 8px;
+  }
+
+  /* Table Mobile */
+  table {
+    font-size: 12px;
+
+    th,
+    td {
+      padding: 8px;
+    }
+  }
+
+  /* Spacing Mobile */
+  .pt-80 {
+    padding-top: 30px !important;
+  }
+
+  .pb-80 {
+    padding-bottom: 30px !important;
+  }
+
+  .mt-5 {
+    margin-top: 15px !important;
+  }
+
+  .mb-5 {
+    margin-bottom: 15px !important;
+  }
+
+  .section-padding {
+    padding: 30px 0;
+  }
+}
+
+/* =====================
+   TABLET PORTRAIT
+   Small to Medium Devices (481px - 767px)
+   ===================== */
+@include breakpoint(max-md) {
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  /* Hero Tablet */
+  .hero-section {
+    min-height: 350px;
+  }
+
+  .hero-content h1 {
+    font-size: 28px;
+  }
+
+  /* Pickup Form Tablet */
+  .pickup-wrapper {
+    gap: 12px;
+
+    .pickup-items {
+      flex: 0 0 calc(50% - 6px);
+      width: auto;
+    }
+
+    .pickup-items:last-child {
+      flex: 0 0 100%;
+    }
+  }
+
+  /* Gallery Tablet */
+  .col-lg-3 {
+    width: 50% !important;
+  }
+
+  .col-md-6 {
+    width: 50% !important;
+  }
+
+  /* Feature Items Tablet */
+  .feature-benefit-items {
+    margin-bottom: 25px;
+  }
+
+  /* Cards Tablet */
+  .car-rental-items,
+  .testimonial-card-items {
+    margin-bottom: 25px;
+  }
+
+  /* Images Tablet */
+  .mobile-click4wheels-image {
+    margin-bottom: -80px;
+  }
+
+  /* Spacing Tablet */
+  .pt-80 {
+    padding-top: 40px !important;
+  }
+
+  .pb-80 {
+    padding-bottom: 40px !important;
+  }
+
+  .section-padding {
+    padding: 40px 0;
+  }
+
+  /* Hide elements on tablet */
+  .hide-tablet {
+    display: none !important;
+  }
+}
+
+/* =====================
+   TABLET LANDSCAPE
+   Medium Devices (768px - 991px)
+   ===================== */
+@include breakpoint(md) {
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  .container {
+    max-width: 95%;
+  }
+
+  .hero-section {
+    min-height: 400px;
+  }
+
+  /* Pickup Form Tablet Landscape */
+  .pickup-wrapper {
+    .pickup-items {
+      flex: 0 0 calc(33.333% - 10px);
+    }
+
+    .pickup-items:last-child {
+      flex: 0 0 calc(33.333% - 10px);
+    }
+  }
+
+  /* Images Tablet Landscape */
+  .mobile-click4wheels-image {
+    margin-bottom: -100px;
+  }
+
+  /* Spacing Tablet Landscape */
+  .pt-80 {
+    padding-top: 50px !important;
+  }
+
+  .pb-80 {
+    padding-bottom: 50px !important;
+  }
+
+  .section-padding {
+    padding: 50px 0;
+  }
+
+  /* Gallery Tablet Landscape */
+  .col-md-4 {
+    width: 50% !important;
+  }
+
+  .col-md-6 {
+    width: 50% !important;
+  }
+}
+
+/* =====================
+   DESKTOP
+   Large Devices (992px - 1199px)
+   ===================== */
+@include breakpoint(lg) {
+  .container {
+    max-width: 95%;
+  }
+
+  .section-padding {
+    padding: 60px 0;
+  }
+
+  .hero-section {
+    min-height: 450px;
+  }
+
+  .mobile-click4wheels-image {
+    margin-bottom: -110px;
+  }
+
+  /* Spacing Desktop */
+  .pt-80 {
+    padding-top: 60px !important;
+  }
+
+  .pb-80 {
+    padding-bottom: 60px !important;
+  }
+
+  /* Show elements on desktop */
+  .show-desktop {
+    display: block !important;
+  }
+
+  .show-mobile,
+  .show-tablet {
+    display: none !important;
+  }
+}
+
+/* =====================
+   LARGE DESKTOP
+   Extra Large Devices (1200px+)
+   ===================== */
+@include breakpoint(xl) {
+  .section-padding {
+    padding: 80px 0;
+  }
+
+  .hero-section {
+    min-height: 500px;
+  }
+
+  .mobile-click4wheels-image {
+    margin-bottom: -120px;
+  }
+
+  /* Spacing Extra Large */
+  .pt-80 {
+    padding-top: 80px !important;
+  }
+
+  .pb-80 {
+    padding-bottom: 80px !important;
+  }
+}
+
+/* =====================
+   UTILITY RESPONSIVE CLASSES
+   ===================== */
+
+/* Responsive Display */
+.hide-mobile {
+  @include breakpoint(max-md) {
+    display: none !important;
+  }
+}
+
+.show-mobile {
+  display: none !important;
+
+  @include breakpoint(max-md) {
+    display: block !important;
+  }
+}
+
+.hide-tablet {
+  @include breakpoint(md) {
+    display: none !important;
+  }
+}
+
+.show-tablet {
+  display: none !important;
+
+  @include breakpoint(md) {
+    display: block !important;
+  }
+}
+
+.hide-desktop {
+  @include breakpoint(lg) {
+    display: none !important;
+  }
+}
+
+.show-desktop {
+  display: none !important;
+
+  @include breakpoint(lg) {
+    display: block !important;
+  }
+}
+
+/* Responsive Flex */
+.flex-mobile-column {
+  @include breakpoint(max-md) {
+    flex-direction: column !important;
+  }
+}
+
+.flex-mobile-wrap {
+  @include breakpoint(max-md) {
+    flex-wrap: wrap !important;
+  }
+}
+
+.w-mobile-100 {
+  @include breakpoint(max-md) {
+    width: 100% !important;
+  }
+}
+
+/* Responsive Spacing */
+.mt-mobile-2 {
+  @include breakpoint(max-md) {
+    margin-top: 20px !important;
+  }
+}
+
+.mb-mobile-2 {
+  @include breakpoint(max-md) {
+    margin-bottom: 20px !important;
+  }
+}
+
+.p-mobile-1 {
+  @include breakpoint(max-md) {
+    padding: 15px !important;
+  }
+}
+
+.px-mobile-1 {
+  @include breakpoint(max-md) {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+}
+
+.py-mobile-1 {
+  @include breakpoint(max-md) {
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+  }
+}
+
+/* Responsive Text Alignment */
+.text-mobile-center {
+  @include breakpoint(max-md) {
+    text-align: center !important;
+  }
+}
+
+.text-mobile-left {
+  @include breakpoint(max-md) {
+    text-align: left !important;
+  }
+}
+
+.text-mobile-right {
+  @include breakpoint(max-md) {
+    text-align: right !important;
+  }
+}
+
+/* Global Responsive Fixes */
+@include breakpoint(max-md) {
+  body {
+    overflow-x: hidden;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  iframe,
+  video {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .row {
+    overflow-x: hidden;
+  }
+
+  input,
+  textarea,
+  select,
+  button {
+    font-size: 16px;
+  }
+}
